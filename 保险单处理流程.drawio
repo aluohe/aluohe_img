@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-15T03:22:31.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="dCIf854KZ5lCFITznYDb" version="14.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-15T03:25:57.423Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="PLq7FRrmRDM4aqc0-u79" version="14.0.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -180,7 +180,7 @@
         <mxCell id="NyMv5PjaEcfiehMKOQza-45" value="1. 货物价值&lt;br&gt;2. 保费费率&lt;br&gt;3. 计算保费" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="360" y="450" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="NyMv5PjaEcfiehMKOQza-50" value="考虑用事务控制| mq异步处理，添加顶端装货中状态" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;direction=east;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="NyMv5PjaEcfiehMKOQza-50" value="考虑用事务控制| mq异步处理，添加订单装货中状态" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;direction=east;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1010" y="1059" width="170" height="100" as="geometry" />
         </mxCell>
       </root>
