@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-16T08:39:46.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="g6Bxl21HzUbEirVlW2P3" version="14.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-17T03:07:14.693Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="_5DxeaaPNC3PQQqmW9Yj" version="14.0.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1422" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -139,7 +139,7 @@
             <mxPoint x="370" y="785" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Zzf6l3dxn1d_fBN0yygW-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A1aLb6qsYqGWgr5VIU96-46" target="A1aLb6qsYqGWgr5VIU96-15">
+        <mxCell id="Zzf6l3dxn1d_fBN0yygW-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A1aLb6qsYqGWgr5VIU96-46" target="A1aLb6qsYqGWgr5VIU96-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="245" y="210" />
@@ -167,8 +167,8 @@
         <mxCell id="A1aLb6qsYqGWgr5VIU96-52" value="即时返回，通知客户端保单购买中" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="373.75" y="900" width="142.5" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="A1aLb6qsYqGWgr5VIU96-56" value="是否考虑，购买保单一直不成功，用户手动取消购买保单，保单用费回退货主账户&lt;br&gt;&lt;br&gt;否则购买失败，执行货主保费回退机制" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=0;align=left;strokeWidth=1;glass=0;sketch=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="910.31" y="955" width="233.13" height="100.01" as="geometry" />
+        <mxCell id="A1aLb6qsYqGWgr5VIU96-56" value="是否考虑，购买保单一直不成功，用户手动取消购买保单，保单用费回退货主账户&lt;br&gt;&lt;br&gt;否则购买失败，执行货主保费回退机制，等待再次发起保单购买事件发生" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=0;align=left;strokeWidth=1;glass=0;sketch=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="889.38" y="940" width="275" height="100.01" as="geometry" />
         </mxCell>
         <mxCell id="A1aLb6qsYqGWgr5VIU96-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="A1aLb6qsYqGWgr5VIU96-58" target="A1aLb6qsYqGWgr5VIU96-60" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -178,6 +178,39 @@
         </mxCell>
         <mxCell id="A1aLb6qsYqGWgr5VIU96-60" value="结束" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="90" y="955" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-0" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;shadow=0;align=left;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1230" y="570" width="400" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ujv36kRvg94jh0NtEfrC-2" target="Ujv36kRvg94jh0NtEfrC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-2" value="定时器开始" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1350" y="598" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-3" value="网络原因没有接收到保单返回信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1230" y="540" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ujv36kRvg94jh0NtEfrC-4" target="Ujv36kRvg94jh0NtEfrC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-4" value="通过购买保单uuid查询保单对应信息" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1335" y="660" width="110" height="36.87" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-9" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ujv36kRvg94jh0NtEfrC-6" target="Ujv36kRvg94jh0NtEfrC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-11" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ujv36kRvg94jh0NtEfrC-6" target="Ujv36kRvg94jh0NtEfrC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-6" value="保单是否存在" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1350" y="720.005" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-8" value="执行保单回退，订单购买保单失败记录" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1460" y="730.94" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Ujv36kRvg94jh0NtEfrC-10" value="保单购买成功，执行保单成功流程" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1330" y="849.995" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
