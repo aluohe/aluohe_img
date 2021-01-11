@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-11T06:54:33.288Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="OfavS-PQBgApjcFhocYt" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-11T09:27:53.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="eYpeygOKQFBDe4_wntQk" version="14.1.8" type="github">
   <diagram id="Bzc4wTy2gZQobhB-j3U7" name="第 1 页">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -164,7 +164,7 @@
           <mxGeometry x="185" y="1790" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="0haxoA6C2NPIrMcEkiKc-50" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="110" y="1990" width="990" height="1940" as="geometry" />
+          <mxGeometry x="110" y="1990" width="990" height="2250" as="geometry" />
         </mxCell>
         <mxCell id="0haxoA6C2NPIrMcEkiKc-51" value="二维码支付流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="135" y="2010" width="95" height="20" as="geometry" />
@@ -330,8 +330,14 @@
         <mxCell id="0haxoA6C2NPIrMcEkiKc-105" value="执行扣款逻辑：钱包扣款：走油券流水，再进行支付，并记录相应的交易记录&lt;br&gt;油券扣款，直接支付，并记录相应的交易记录" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
           <mxGeometry x="640" y="3340" width="320" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-110" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-107" target="0haxoA6C2NPIrMcEkiKc-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="0haxoA6C2NPIrMcEkiKc-107" value="调用三方接口确认支付二维码订单&lt;br&gt;成功，结束&lt;br&gt;失败：回滚事务" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
           <mxGeometry x="725" y="3470" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-109" value="&lt;pre style=&quot;background-color: #272822 ; color: #ffffff ; font-family: &amp;#34;comic sans ms&amp;#34; ; font-size: 12.0pt&quot;&gt;    &lt;span style=&quot;color: #f92772&quot;&gt;private void &lt;/span&gt;&lt;span style=&quot;color: #a7e22e&quot;&gt;hadle&lt;/span&gt;&lt;span style=&quot;color: #f9faf4&quot;&gt;(){&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #f9faf4&quot;&gt;       &lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;伪代码&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;   &lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;更新用户钱包逻辑&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;   &lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//lock -userWallet&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;      //uppUserWallet&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;      //unlock -userWallet&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//        try {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;        //&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;事务回滚 ：失败&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;异常&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//saveTrade()&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;        //callThirdAPI();&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//        } catch (Exception e) {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;        //&lt;/span&gt;&lt;span style=&quot;color: #74715e ; font-family: &amp;#34;courier new&amp;#34;&quot;&gt;回调更新用户钱包逻辑执行金额回退&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//     return Result.failed(e.getMessage());&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;//        }&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: #74715e&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color: #f9faf4&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="610" y="3600" width="380" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
