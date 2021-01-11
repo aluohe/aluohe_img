@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-11T01:52:11.606Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="w5cW1L9sj1Q1iaCdyl3v" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-11T05:59:45.172Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="_fQU4qocrYIfk1WkFOqa" version="14.1.8" type="github">
   <diagram id="Bzc4wTy2gZQobhB-j3U7" name="第 1 页">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -100,6 +100,69 @@
             <mxGeometry x="770" y="840" width="130" height="90" as="geometry" />
           </mxCell>
         </object>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-30" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1140" width="850" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-31" value="同步惠运通全量站点信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1160" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-33" target="0haxoA6C2NPIrMcEkiKc-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-33" value="定时器调度开始" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1230" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-34" target="0haxoA6C2NPIrMcEkiKc-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-34" value="调用三方站点全量获取接口" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-36" target="0haxoA6C2NPIrMcEkiKc-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-36" value="分页获取站点信息" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-38" target="0haxoA6C2NPIrMcEkiKc-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-42" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0haxoA6C2NPIrMcEkiKc-41">
+          <mxGeometry x="0.2471" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-38" target="0haxoA6C2NPIrMcEkiKc-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-45" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0haxoA6C2NPIrMcEkiKc-44">
+          <mxGeometry x="-0.2553" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-38" value="站点信息是否存在" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="1520" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-40" target="0haxoA6C2NPIrMcEkiKc-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="1560" />
+              <mxPoint x="520" y="1815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-40" value="全量更新站点信息" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0haxoA6C2NPIrMcEkiKc-43" target="0haxoA6C2NPIrMcEkiKc-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-43" value="添加新的站点信息" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0haxoA6C2NPIrMcEkiKc-46" value="结束" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1790" width="90" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
