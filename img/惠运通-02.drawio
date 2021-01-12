@@ -1,1 +1,168 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T01:24:47.210Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" version="14.1.9" etag="lyWKpCalTKZWKzsQ1uga" type="github"><diagram id="tIvXKvH7w44iIKk_T9M5">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-12T01:34:15.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="JS-YoSD6EneV11D5A52d" version="14.1.9" type="github">
+  <diagram id="tIvXKvH7w44iIKk_T9M5" name="第 1 页">
+    <mxGraphModel dx="1422" dy="-407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-1" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1350" width="990" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-2" value="二维码支付流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1290" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-4" target="KJvupdVWkCJUAiz-Cy9K-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-4" value="二维码支付开始" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="1350" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-6" target="KJvupdVWkCJUAiz-Cy9K-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-6" value="调用二维码生成接口" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1440" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-9" target="KJvupdVWkCJUAiz-Cy9K-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-9" target="KJvupdVWkCJUAiz-Cy9K-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-9" value="生成二维码图片，后台处理二维码预下单" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1570" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-10" value="调用三方接口二维码预下单" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-13" target="KJvupdVWkCJUAiz-Cy9K-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-13" target="KJvupdVWkCJUAiz-Cy9K-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-13" value="二维码生成返回给移动端" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1700" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-15" target="KJvupdVWkCJUAiz-Cy9K-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-15" value="油站操作人员扫码及填写对应金额" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1695" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-17" target="KJvupdVWkCJUAiz-Cy9K-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-17" value="获取回调信息，补充后台预下单信息" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1825" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-20" target="KJvupdVWkCJUAiz-Cy9K-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="1855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-19" value="接口回调通知" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KJvupdVWkCJUAiz-Cy9K-18">
+          <mxGeometry x="0.0828" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-20" value="调用三方接口处理对应业务逻辑" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1695" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-23" target="KJvupdVWkCJUAiz-Cy9K-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-23" target="KJvupdVWkCJUAiz-Cy9K-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="2105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-23" value="移动端轮询获取二维码下单结果" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1965" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-25" target="KJvupdVWkCJUAiz-Cy9K-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-25" value="移动端轮询获取二维码下单结果 需要轮询策略：间隔时间、查询次数 之后不再查询" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1957.5" width="200" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-28" target="KJvupdVWkCJUAiz-Cy9K-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-27" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KJvupdVWkCJUAiz-Cy9K-26">
+          <mxGeometry x="-0.1625" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-28" value="二维码预下单成功" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-30" target="KJvupdVWkCJUAiz-Cy9K-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-30" value="确认支付加油/加气" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="2120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-33" target="KJvupdVWkCJUAiz-Cy9K-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-33" value="获取返回结果" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="2360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-34" target="KJvupdVWkCJUAiz-Cy9K-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-34" value="调用三方接口确认二维码下单" style="whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="2240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-39" target="KJvupdVWkCJUAiz-Cy9K-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-61" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KJvupdVWkCJUAiz-Cy9K-60">
+          <mxGeometry x="-0.3333" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-39" target="KJvupdVWkCJUAiz-Cy9K-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-64" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KJvupdVWkCJUAiz-Cy9K-63">
+          <mxGeometry x="-0.1882" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-39" value="成功" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2355" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-41" target="KJvupdVWkCJUAiz-Cy9K-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-41" target="KJvupdVWkCJUAiz-Cy9K-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-41" value="执行扣款流程" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="2240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-42" target="KJvupdVWkCJUAiz-Cy9K-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-42" value="提醒支付失败及原因，并作出记录" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-45" value="结束" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2480" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KJvupdVWkCJUAiz-Cy9K-67" target="KJvupdVWkCJUAiz-Cy9K-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-67" value="事务回退，金额回退流程" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;shadow=0;strokeWidth=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KJvupdVWkCJUAiz-Cy9K-69" value="结束" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;shadow=0;glass=0;sketch=0;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="2580" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
