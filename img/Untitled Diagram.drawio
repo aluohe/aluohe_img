@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-28T05:57:03.194Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="m3hNTEuc9DEqSZRiL-Rg" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-28T08:28:30.351Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="MFTyHRxZdbrq1rxRHXMN" version="16.4.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1773" dy="1682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="新增用户站内信" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;sketch=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="-50" width="120" height="40" as="geometry" />
+          <mxGeometry x="75" y="-50" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="No" style="rounded=1;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;sketch=1;curved=1;strokeColor=#FF6392;fontColor=#5AA9E6;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
           <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
@@ -22,7 +22,7 @@
           <mxGeometry x="-40" y="500" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;sketch=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-50" y="610" width="120" height="40" as="geometry" />
+          <mxGeometry x="-50" y="630" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-0" value="" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-60" y="70" width="390" height="80" as="geometry" />
@@ -34,13 +34,13 @@
           <mxGeometry x="-50" y="70" width="350" height="80" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-7" value="&lt;h1&gt;redis 动态队列维护(r1)&lt;/h1&gt;&lt;div&gt;维护用户-最新1000条消息ID 动态队列&lt;/div&gt;&lt;div&gt;使用数据结构：list&lt;/div&gt;&lt;div&gt;动态队列维护：leftpush、rightpop&lt;/div&gt;&lt;div&gt;消息已读处理：remove&lt;/div&gt;&lt;div&gt;key: userId -&amp;gt; values msgIds&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="250" y="-260" width="270" height="150" as="geometry" />
+          <mxGeometry x="220" y="-380" width="270" height="150" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-8" target="-cFR_FY4Ac59gnSg9RBy-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-8" value="&lt;h1&gt;redis 维护用户队列（r2）&lt;/h1&gt;&lt;div&gt;维护接收站内信的用户队列&lt;/div&gt;&lt;div&gt;使用数据结构：set&lt;/div&gt;&lt;div&gt;用户接收站内信时，维护接收站内信的用户的队列&lt;/div&gt;&lt;div&gt;作用：用于每天执行数据备份时，清理维护的用户最新站内信关系动态队列&lt;/div&gt;&lt;div&gt;key: usermsgs -&amp;gt; value userId&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="570" y="-270" width="280" height="170" as="geometry" />
+          <mxGeometry x="520" y="-380" width="280" height="170" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-14" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-10" target="-cFR_FY4Ac59gnSg9RBy-13">
           <mxGeometry relative="1" as="geometry" />
@@ -77,10 +77,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-17" value="r3.mget(msgIds) --&amp;gt; (msgId:userId) s&lt;br&gt;iter 循环处理：&lt;br&gt;分解msgid:userId&amp;nbsp;&lt;br&gt;r1(userId).remove(msgId)&lt;br&gt;&lt;br&gt;r3.del(msgIds)&lt;br&gt;&lt;div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="810" y="27.5" width="210" height="115" as="geometry" />
+          <mxGeometry x="805" y="27.5" width="210" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="-cFR_FY4Ac59gnSg9RBy-22" value="&lt;h1&gt;redis 动态队列维护(r3)&lt;/h1&gt;&lt;div&gt;维护msgId-userId 数据信息&lt;/div&gt;&lt;div&gt;&lt;span&gt;使用数据结构：hashmap&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;动态队列维护：put / putAll&lt;/div&gt;&lt;div&gt;&lt;span&gt;消息已读处理：remove&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;key:msgId -&amp;gt; value: msgId:userId&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-20" y="-260" width="260" height="130" as="geometry" />
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-22" value="&lt;h1&gt;redis 维护可弹框消息队列(r3)&lt;/h1&gt;&lt;div&gt;维护msgId-userId 数据信息&lt;/div&gt;&lt;div&gt;&lt;span&gt;使用数据结构：hashmap&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;动态队列维护：put / putAll&lt;/div&gt;&lt;div&gt;&lt;span&gt;消息已读处理：remove&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;key:msgId -&amp;gt; value: msgId:userId&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-102.5" y="-380" width="300" height="160" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-26" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-23" target="-cFR_FY4Ac59gnSg9RBy-25">
           <mxGeometry relative="1" as="geometry" />
@@ -128,7 +128,7 @@
           <mxGeometry x="790" y="370" width="240" height="180" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-36" value="&lt;h1&gt;redis 缓存信息补充（r0）&lt;/h1&gt;&lt;div&gt;数据结构：set&lt;/div&gt;&lt;div&gt;当r1 队列中，用户数据不足100，并且统计可弹框数据超过当前队列中的数据时，将该用户ID放入该队列中，由定时器 定时处理该队列中的用户数据，将查出来的数据添加到r1 队列右侧,定时器1h 执行一次&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="870" y="-270" width="280" height="170" as="geometry" />
+          <mxGeometry x="820" y="-380" width="280" height="170" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-52" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-45" target="-cFR_FY4Ac59gnSg9RBy-51">
           <mxGeometry relative="1" as="geometry" />
@@ -137,7 +137,7 @@
           <mxGeometry x="850" y="690" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-48" value="表示补充数据的任务已在队列中/ 用户未读、可弹出的消息已经没有了，直接返回" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1170" y="430" width="120" height="60" as="geometry" />
+          <mxGeometry x="1170" y="410" width="190" height="100" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-60" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-51" target="-cFR_FY4Ac59gnSg9RBy-59">
           <mxGeometry relative="1" as="geometry" />
@@ -154,7 +154,7 @@
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-58" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-56" target="-cFR_FY4Ac59gnSg9RBy-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cFR_FY4Ac59gnSg9RBy-56" value="通过组ID查询改组对应的msgIds" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-56" value="通过组ID查询该组对应的msgIds" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1130" y="55" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-59" value="从任务队列中弹出一个用户ID，查询该用户最新可弹窗300条消息，执行&lt;br&gt;r1.len &amp;lt;150 -&amp;gt;&lt;br&gt;r1(userid).rightpush(msgIds)&lt;br&gt;r3.putall(msgIds,msgId:userId)&lt;br&gt;r0.del(userId)&lt;br&gt;&lt;br&gt;else&amp;nbsp;&lt;br&gt;r0.del(userId)" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -163,8 +163,13 @@
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-74" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-61" target="-cFR_FY4Ac59gnSg9RBy-73">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-cFR_FY4Ac59gnSg9RBy-61" value="数据查询" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-61" value="数据查询（当前用户最新100条消息数据）" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-285" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-93" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-64" target="-cFR_FY4Ac59gnSg9RBy-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="1280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-64" value="msgIds -&amp;gt; 查询userwebmsg表，获取用户最新100条消息，过滤限制一条模版消息，location消息。。。" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-318.75" y="1050" width="187.5" height="110" as="geometry" />
@@ -173,16 +178,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-66" value="数据备份" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="740" width="120" height="60" as="geometry" />
+          <mxGeometry x="15" y="750" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-72" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-67" target="-cFR_FY4Ac59gnSg9RBy-71">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-67" value="每天凌晨3点清空数据，执行数据备份逻辑" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="850" width="140" height="60" as="geometry" />
+          <mxGeometry x="5" y="860" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-cFR_FY4Ac59gnSg9RBy-71" value="数据库数据备份，结束之后通过r2 清空 r1队列，然后清空 r3 队列，最后清空 r0 队列" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="315" y="980" width="170" height="90" as="geometry" />
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-71" value="数据库数据备份，结束之后通过r2 清空 r1队列，&lt;br&gt;然后清空 r3 队列，&lt;br&gt;最后清空 r0、r2&amp;nbsp; 队列" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-10" y="990" width="170" height="90" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-76" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-73" target="-cFR_FY4Ac59gnSg9RBy-75">
           <mxGeometry relative="1" as="geometry" />
@@ -209,8 +214,74 @@
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-75" value="&lt;span&gt;用户ID，r1(userId).range(0,100)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-297.5" y="890" width="145" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-cFR_FY4Ac59gnSg9RBy-78" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;查询数据库，获取最新200 条数据，将对应数据存储在缓存队列中,r2.add(userId)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;r1.add(userId,msgIds)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;r3.addall(msgId,msgId:userId)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-600" y="700" width="195" height="110" as="geometry" />
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-95" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-78" target="-cFR_FY4Ac59gnSg9RBy-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-78" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;查询数据库，获取最新200 条数据，将对应数据存储在缓存队列中,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;lock（userId）{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;r2.add(userId)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;r1.add(userId,msgIds)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;r3.addall(msgId,msgId:userId)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;防止多节点并发重复添加用户消息关系，加锁控制，获取到锁后做缓存配置处理，没有获取到锁，直接返回成功，不做消息弹框处理&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-720" y="810" width="337" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-89" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-82" target="-cFR_FY4Ac59gnSg9RBy-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-690" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-82" value="站内信弹框" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-285" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-98" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-92" target="-cFR_FY4Ac59gnSg9RBy-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-99" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5AA9E6;" vertex="1" connectable="0" parent="-cFR_FY4Ac59gnSg9RBy-98">
+          <mxGeometry x="-0.1086" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-101" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-92" target="-cFR_FY4Ac59gnSg9RBy-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-102" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5AA9E6;" vertex="1" connectable="0" parent="-cFR_FY4Ac59gnSg9RBy-101">
+          <mxGeometry x="-0.0359" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-92" value="&lt;span&gt;当前消息&lt;/span&gt;&lt;br&gt;&lt;span&gt;是否普通消息&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-450" y="1430" width="135" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-96" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-94" target="-cFR_FY4Ac59gnSg9RBy-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-380" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-94" value="用户最新100条消息数据，过滤限制一条模版消息，location消息。。。" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-637.25" y="1060" width="171.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-103" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-97" target="-cFR_FY4Ac59gnSg9RBy-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-97" value="丢弃当前消息" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-240" y="1447.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-100" value="当前消息加入发送弹窗消息队列，通过websocket给用户发送弹框消息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-585.75" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-107" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-106" target="-cFR_FY4Ac59gnSg9RBy-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-108" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5AA9E6;" vertex="1" connectable="0" parent="-cFR_FY4Ac59gnSg9RBy-107">
+          <mxGeometry x="0.0105" y="5" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-112" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-106" target="-cFR_FY4Ac59gnSg9RBy-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-113" value="no（前端 websocket 拉取消息）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5AA9E6;" vertex="1" connectable="0" parent="-cFR_FY4Ac59gnSg9RBy-112">
+          <mxGeometry x="-0.0156" y="13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-cFR_FY4Ac59gnSg9RBy-106" value="是否立即发送" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-450" y="1260" width="135" height="95" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
