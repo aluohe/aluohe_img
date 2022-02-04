@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-04T14:35:47.487Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="w6gSKwe7QOsVK7NCFK4J" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-04T16:20:01.106Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="ZqfrKksX4H_qfW5anIUf" version="16.4.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2285" dy="1578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2837" dy="1937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -125,7 +125,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-33" value="r1(userId).len &amp;lt;100 &amp;amp;&amp;amp;&lt;br&gt;&amp;nbsp;! r0.contains(userId) &amp;amp;&amp;amp;&lt;br&gt;&amp;nbsp;count(userId)-&amp;gt;msgs &amp;gt;r1(userId).len" style="rhombus;whiteSpace=wrap;html=1;align=center;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="790" y="370" width="240" height="180" as="geometry" />
+          <mxGeometry x="820" y="225" width="240" height="180" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-36" value="&lt;h1&gt;redis 缓存信息补充（r0）&lt;/h1&gt;&lt;div&gt;数据结构：set&lt;/div&gt;&lt;div&gt;当r1 队列中，用户数据不足100，并且统计可弹框数据超过当前队列中的数据时，将该用户ID放入该队列中，由定时器 定时处理该队列中的用户数据，将查出来的数据添加到r1 队列右侧,定时器1h 执行一次&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;sketch=1;fontColor=#5AA9E6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="820" y="-380" width="280" height="170" as="geometry" />
@@ -134,16 +134,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-45" value="r0.add(userId)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="850" y="690" width="120" height="60" as="geometry" />
+          <mxGeometry x="880" y="545" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-48" value="表示补充数据的任务已在队列中/ 用户未读、可弹出的消息已经没有了，直接返回" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1170" y="410" width="190" height="100" as="geometry" />
+          <mxGeometry x="1200" y="265" width="190" height="100" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-60" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-51" target="-cFR_FY4Ac59gnSg9RBy-59">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-51" value="定时任务处理队列中的用户数据，用于用户消息数据索引补充" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1050" y="690" width="120" height="60" as="geometry" />
+          <mxGeometry x="1045" y="535" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-57" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-53" target="-cFR_FY4Ac59gnSg9RBy-56">
           <mxGeometry relative="1" as="geometry" />
@@ -158,7 +158,7 @@
           <mxGeometry x="1130" y="55" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-59" value="从任务队列中弹出一个用户ID，查询该用户最新可弹窗300条消息，执行&lt;br&gt;r1.len &amp;lt;150 -&amp;gt;&lt;br&gt;r1(userid).rightpush(msgIds)&lt;br&gt;r3.putall(msgIds,msgId:userId)&lt;br&gt;r0.del(userId)&lt;br&gt;&lt;br&gt;else&amp;nbsp;&lt;br&gt;r0.del(userId)" style="whiteSpace=wrap;html=1;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;rounded=1;glass=0;strokeWidth=1;shadow=0;sketch=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1020" y="820" width="320" height="150" as="geometry" />
+          <mxGeometry x="1310" y="500" width="320" height="150" as="geometry" />
         </mxCell>
         <mxCell id="-cFR_FY4Ac59gnSg9RBy-74" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;strokeColor=#FF6392;fillColor=#FFE45E;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-cFR_FY4Ac59gnSg9RBy-61" target="-cFR_FY4Ac59gnSg9RBy-73">
           <mxGeometry relative="1" as="geometry" />
